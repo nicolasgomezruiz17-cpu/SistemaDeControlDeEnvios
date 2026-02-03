@@ -12,10 +12,10 @@ public class MenuPrincipal {
             System.out.println("--------------------------");
             System.out.println("      Menu principal      ");
             System.out.println("--------------------------");
-            System.out.println("  1.Gestión de rutas      ");
-            System.out.println("  2.Menu principal        ");
+            System.out.println("  1.Gestión de envios      ");
+            System.out.println("  2.Gestión de rutas      ");
             System.out.println("  3.Gestión de conductores");
-            System.out.println("  4.Reportes y estadisticas     ");
+            System.out.println("  4.Reportes y estadisticas");
             System.out.println("  5.Salir                 ");
             System.out.println("--------------------------");
             System.out.println("Eliga una opción: ");
@@ -25,11 +25,12 @@ public class MenuPrincipal {
             }else{
                 switch (decision){
                     case 1 :
-                        gestionEnvios.registrarNuevoEnvio();
+                        gestionEnvios.subMenuEnvios();
                         break;
 
                     case 2:
                         gestionEnvios.mostrarEnvio();
+                        break;
                 }
             }
 
